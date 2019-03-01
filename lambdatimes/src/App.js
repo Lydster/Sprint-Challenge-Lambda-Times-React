@@ -2,26 +2,11 @@ import React from 'react';
 import TopBar from './components/TopBar';
 import Header from './components/Header';
 import Content from './components/Content/Content';
-import tabData from '../src/data'
-import cardData from '../src/data'
+import {tabData} from './data'
+import {cardData} from './data'
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      tabdata: [],
-      carddata: []
-    }
-  }
-
-  componentDidMount() {
-    this.setState({
-      tabdata: tabData,
-      carddata: cardData
-    })
-  }
-
-  render() {
+const App = () => {
+  
   return (
     <div className="App">
       <TopBar />
@@ -29,7 +14,6 @@ class App extends React.Component {
       <Content />
     </div>
   );
-}
 }
 
 export default App;
