@@ -1,6 +1,7 @@
 import React from 'react';
 import Tab from './Tab';
 import styles from 'styled-components'
+import PropTypes from 'prop-types'
 
 const StyledTabs = styles.div`
   display: flex;
@@ -22,6 +23,10 @@ const Tabs = props => {
     </div>
   );
 };
+
+Tabs.propTypes = {
+  tabs: PropTypes.array.isRequired
+}
 
 // Make sure to use PropTypes to validate your types!
 export default Tabs;
