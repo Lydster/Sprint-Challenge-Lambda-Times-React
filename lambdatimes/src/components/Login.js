@@ -34,11 +34,11 @@ class Login extends React.Component {
         return(
            
             <Container >
-                <H2style>Welcome to InstaFunForeverReactFun</H2style>
+                <H2style>Welcome to Lambda Times</H2style>
                 <form className="form" onSubmit={this.signIn}>
                 <div>
                     <div className='form-group' >
-                        <h1>Username</h1>
+                        <h4>Username</h4>
                         <input
                             type="username"
                             name="username"
@@ -49,7 +49,7 @@ class Login extends React.Component {
                 </div>
                 <div>
                     <div className='form-group'>
-                        
+                        <h4>password</h4>
                         <input
                             type="password"
                             name="password"
