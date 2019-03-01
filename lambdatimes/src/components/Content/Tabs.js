@@ -1,18 +1,23 @@
 import React from 'react';
 import Tab from './Tab';
+import styles from 'styled-components'
 
+const StyledTabs = styles.div`
+  display: flex;
+
+`
 
 const Tabs = props => {
   console.log(props)
   return (
     <div className="tabs">
       <div className="topics">
-        <span className="title">TRENDING TOPICS:</span>
-          <div>
+        <span>TRENDING TOPICS:</span>
+          <StyledTabs>
           {props.tabs.map((tab, idx) => {
-            return <Tab tab={tab} key={idx} />
+            return <Tab tab={tab} key={idx} selected={props.selected} changeSelected={props.changeSelected}/>
           })}
-          </div>
+          </StyledTabs>
       </div>
     </div>
   );
