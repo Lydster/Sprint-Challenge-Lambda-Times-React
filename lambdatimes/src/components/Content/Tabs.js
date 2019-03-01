@@ -8,11 +8,11 @@ const Tabs = props => {
     <div className="tabs">
       <div className="topics">
         <span className="title">TRENDING TOPICS:</span>
-        <div>
-        {props.tabs.map((tab, idx) => {
-          return <Tab tab={tab} key={idx} />
-        })}
-        </div>
+          <div>
+          {props.tabs.map((tab, idx) => {
+            return <Tab tab={tab} key={idx} />
+          })}
+          </div>
       </div>
     </div>
   );
