@@ -43,7 +43,7 @@ class Login extends React.Component {
                             type="username"
                             name="username"
                             id="exampleUsername"
-                            placeholder="cool-guy"
+                            placeholder="username"
                         />
                     </div>    
                 </div>
